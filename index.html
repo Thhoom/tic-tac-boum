@@ -104,7 +104,7 @@ $('backupFile').onchange=async e=>{
 };
 
 // Supabase : la clé publishable est publique. Ne jamais placer une clé secret/service_role ici.
-const CLOUD_URL='https://bupggljiahhngpnkiwpw.supabase.co';
+const CLOUD_URL='https://bupqglijahhngpnkiwpw.supabase.co';
 const CLOUD_KEY='sb_publishable_AWOSQpZH4gVlap0pCcG-4w_BgFuFNdU';
 let cloudClient=null,cloudUser=null,cloudReady=false,cloudBusy=Promise.resolve(),cloudLoading=false;
 const cloudStatus=(message,error=false)=>{const el=$('cloudStatus');el.textContent=message;el.classList.toggle('cloud-alert',error);el.classList.toggle('cloud-ok',!error&&!!cloudUser)};
